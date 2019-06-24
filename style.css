@@ -1,0 +1,282 @@
+html {
+  width: 100%;
+  max-width:1024px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* html:after {
+  content: "";
+  background: url(wall2.jpg) top center no-repeat #ececec;
+  background-size: 1920px 1920px;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+} */
+body {
+  width: 100%;
+  max-width: 1024px; /*probaj obrisi nakon unosa texta*/
+  font-size: 0.95em;
+  line-height: 1.25em;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  background: #f9f9f9;
+  color: #555;
+}
+
+ #logo img {
+   
+  /* border: 1px solid rgb(211, 211, 211); */
+}
+#logo {
+    display: inline-block;
+    width: 30%;
+    height: 87px;
+    position: absolute;
+    z-index: 11;
+    background-color: white;
+    border-bottom: 1px solid #ececec;
+
+}
+#logo a {
+    text-align: center;
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+header {
+  background: #fff;
+  width: 100%;
+  max-width: 1024px;
+  height: 87px;
+  position: relative;
+  top: 0;
+  /* left: 0; */
+  border-bottom: 1px solid #ececec;
+}
+
+nav {
+  float: right;
+  padding-top: 20px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  /* float: left; */
+  padding: 10px;
+}
+.active {
+  font-weight: bold;
+  color: #aaa;
+}
+input#toggle {
+  display: none;
+}
+#socials {
+  padding-left: 25px;
+  padding-right: 10px;
+  display: inline-block;
+}
+#socials a {
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  padding: 5px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #aaa;
+}
+#socials a:nth-child(3) {
+  padding: 5px 7px;
+
+}
+/* #socials a:nth-child(1) {
+  color: #2e44c0;
+}
+#socials a:nth-child(2) {
+  color: aqua;
+}
+#socials a:nth-child(3) {
+  color: #00aeff;
+} */
+/* -----------------  MAIN PART ------------------*/
+/* .mainsection {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border: 2px solid black;
+}
+#main, #sidebar {
+  display: inline-block;
+  min-width: 80px;
+  position: relative;
+  z-index: 8;
+  border: 1px solid #ececec;
+  margin: 10px;
+
+
+}
+#main {
+  float: left;
+  width: 60%;
+
+}
+#sidebar {
+  float: right;
+  width: 33%;
+} */
+h1,h2,h3 {
+  font-weight: 700;
+  padding: 5px;
+}
+.mainsection {
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+  height: 400px;
+  border: 1px solid black;
+  color: #555;
+}
+#main, #sidebar {
+  padding: 1em;
+}
+#main {
+  background-color: #e8ffcb;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* flex: 2; */
+  /* min-width: 400px; */
+}
+#sidebar {
+  background-color: #c7deff;
+  display: flex;
+  flex-direction: column; 
+  /* flex:1; */
+  width: 45%;
+}
+#subcribe-form {
+  display: flex;
+  padding: 5px;
+}
+#subscribe {
+  height: 37px;
+  background-color: #c43434;
+  color: #ececec;
+  margin-left: 0;
+  border: 1px solid #c43434;
+  border-left: none;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius:2px;
+}
+input#email {
+  height: 35px;
+  min-width:120px;
+  border: 1px solid #fff;
+  border-right: none;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius:2px;
+  margin-right:0px;
+  padding: 0 10px;
+  background-color:#fff;
+  text-align: center;
+}
+input#email::placeholder {
+  text-align: center;
+}
+/* ----------------------- RESPONSIVE PART --------------*/
+@media only screen and (max-width : 640px) {
+header {
+  position: absolute;
+  /* box-shadow: 0 0 5px #858585; */
+}
+nav li {
+  text-align: center;
+  width: 100%;
+  padding: 5px 0;
+  margin: 0;
+  float: none;
+}
+/*Transitions*/
+.navi {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+#socials {
+  border-top: 1px solid #ececec;
+  padding-top: 15px;
+}
+.navi .menu {
+  margin: 0px auto 0px auto;
+  background: #fff;
+  /* border: 1px solid #444; */
+  right: 0px;
+  /* -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75); */
+  /* background: #f5f5f5; */
+  height: auto;
+  position: relative;
+  z-index: 9;
+  top: 67px;
+  transition: top 0.23s ease-in-out;
+  padding: 10px;
+}
+.navi input#toggle {
+  display: none;
+}
+.navi input#toggle + label {
+  display: inline-block;
+  width: 70%;
+  height: 87px;
+  background:url(menu.png) center right no-repeat #fff;
+  background-color: white;
+  background-position:95% 50%;
+  position: absolute; /*probaj fixed da bude stickey*/
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ececec;
+  z-index: 10;
+}
+
+/* input#toggle:checked ~ label {
+  top: 2px;
+} */
+
+input#toggle:checked ~ .menu {
+  top: -140px;
+}
+/* ------------------------- MAIN PART ------------------------*/
+#main, #sidebar {
+  /* float: none;
+  display: block;
+  width: 100%;
+  top: 86px; */
+  width: 100%;
+}
+.mainsection {
+  flex-wrap: wrap;
+  top: 86px;
+}
+
+
+
+
+
+}
