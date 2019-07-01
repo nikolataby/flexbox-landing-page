@@ -9,42 +9,42 @@ html {
   font-style: normal;
   font-weight: 400;
   src: local('raleway'),
-       url('/fonts/Raleway-Regular.woff2') format('woff2');
+       url('fonts/Raleway-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'arvo';
   font-style: normal;
   font-weight: 400;
   src: local('Arvo-Regular'),
-       url('/fonts/Arvo-Regular.ttf') format('ttf');
+       url('fonts/Arvo-Regular.ttf') format('ttf');
 }
 @font-face {
   font-family: 'fira';
   font-style: normal;
   font-weight: 400;
   src: local('FiraSans-Regular'),
-       url('/fonts/FiraSans-Regular.otf') format('otf');
+       url('fonts/FiraSans-Regular.otf') format('otf');
 }
 @font-face {
   font-family: 'dosis';
   /* font-style: normal;
   font-weight: 400; */
   src: local('Dosis-Regular'),
-       url('/fonts/Dosis-Regular.otf') format('otf');
+       url('fonts/Dosis-Regular.otf') format('otf');
 }
 @font-face {
   font-family: 'roboto';
   font-style: normal;
   font-weight: 400;
   src: local('RobotoSlab-Regular'),
-       url('/fonts/RobotoSlab-Regular.ttf') format('ttf');
+       url('fonts/RobotoSlab-Regular.ttf') format('ttf');
 }
 @font-face {
   font-family: 'titillium';
   font-style: normal;
   font-weight: 400;
   src: local('TitilliumWeb-Regular'),
-       url('/fonts/TitilliumWeb-Regular.woff2') format('woff2');
+       url('fonts/TitilliumWeb-Regular.woff2') format('woff2');
 }
 /* html:after {
   content: "";
