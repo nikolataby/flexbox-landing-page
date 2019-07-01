@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="reset.css">
-	<!-- <link rel="stylesheet" href="normalize.css"> -->
 	<link rel="stylesheet" href="style.css">
+	<script src="counter.1.js"></script>
     <title>Responsive Menu</title>
 </head>
 <body>
+	<div id="top-header">
+		<p>+381 65 99-55-777</p>
+		<p><a href="#">Already a Member&nbsp;</a>
+		<a href="#">&nbsp;Join us</a></p>
+	</div>
     <header>
         <div id="logo">
 			<a href="#"><img src="logo2.png" ></a>
@@ -35,17 +40,41 @@
 	</header>
 	<section class="mainsection">
 		<div id="main">
-			<H1>THIS IS THE MAIN PART</H1>
-			<p>All the text should be here, with some pictures</p>
+			<H1>FIND YOU PHONE</H1>
+			<p>Reavel your dreams in our full store</p>
+			<div id="promo-img">
+				<img src="/pic/common-two-iphones.png">
+			</div>
 		</div>
 		<div id="sidebar">
 			<h2>Lead capturing forms</h2>
-			<p>Bellow needs to be a subscribe form
-				or contact form with more input fields</p>
+			<p>Bellow is a subscribe form where you put your 
+				 contact email</p>
 			<div id="subcribe-form">
 				<input type="email" id="email" placeholder="Enter your email" required><button id="subscribe">Subscribe</button>
 			</div>
-			
+		</div>
+	</section>
+	<section class="timer">
+		<p>We Are Coming Soon</p>
+		<p>save yout time and energy</p>
+		<div class="countdown">
+			<div class="letter">
+					<p id="day"></p>
+					<p>D A Y S</p>
+			</div>
+			<div class="letter">
+					<p id="hour"></p>
+					<p>H O U R S</p>
+			</div>
+			<div class="letter">
+					<p id="minute"></p>
+					<p>M I N U T E S</p>
+			</div>
+			<div class="letter">
+					<p id="second"></p>
+					<p>S E C O N D S</p>
+			</div>
 		</div>
 	</section>
 </body>
