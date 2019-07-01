@@ -388,7 +388,7 @@ input#toggle:checked ~ .menu {
 .timer {
   display: flex;
   position: relative;
-  top: 160px;
+  top: 180px;
 }
 
 
