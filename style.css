@@ -369,21 +369,19 @@ input#toggle:checked ~ .menu {
 }
 /* ------------------------- MAIN PART ------------------------*/
 #main, #sidebar {
-  /* float: none;
-  display: block;
-  width: 100%;
-  top: 86px; */
+  padding: 10px;
   width: 100%;
 }
 .mainsection {
   flex-wrap: wrap;
   top: 63px;
+  height: 600px;
 }
 .timer {
   display: flex;
   position: relative;
-  height: 200px;
-  top: 160px;
+  height: 220px;
+  top: 63px;
 }
 
 
